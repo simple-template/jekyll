@@ -1,0 +1,28 @@
+<footer>
+	<hr />
+	{%- if site.data.social %}
+	<nav>
+		{%- if site.data.social.facebook %}
+		<a href="https://www.facebook.com/{{site.data.social.facebook}}">Facebook</a>
+		{%- endif %}
+		{%- if site.data.social.twitter %}
+		<a href="https://twitter.com/{{site.data.social.twitter}}">Twitter</a>
+		{%- endif %}
+		{%- if site.data.social.github %}
+		<a href="https://github.com/{{site.data.social.github}}">Github</a>
+		{%- endif %}
+		{%- if site.data.social.youtube %}
+		<a href="https://www.youtube.com/channel/{{site.data.social.youtube}}">Youtube</a>
+		{%- endif %}
+		{%- if site.data.social.instagram %}
+		<a href="https://www.instagram.com/{{site.data.social.instagram}}">Instagram</a>
+		{%- endif %}
+		{%- if site.data.social.linkedin %}
+		<a href="https://www.linkedin.com/{{site.data.social.linkedin}}">Linkedin</a>
+		{%- endif %}
+	</nav>
+	{%- endif %}
+	<p>
+		{{site.time | date :'%Y'}} &copy; {{site.author}}
+	</p>
+</footer>

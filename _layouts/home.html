@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<main>
+{{content}}
+
+{%- if site.posts.size > 0 %}
+<h2>Latest Posts:</h2>
+<ul>
+	{%- for each in site.posts limit:5 %}
+	<li>
+		<a href="{{each.url | relative_url}}">{{each.title}}</a>
+	</li>
+	{%- endfor %}
+</ul>
+{%- endif %}
+</main>

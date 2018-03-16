@@ -1,0 +1,19 @@
+<header>
+	<h1>{{site.title}}</h1>
+	{%- if site.data.navigation %}
+	<nav>
+		{%- for each in site.data.navigation %}
+		{%- if page.url == {{each.url}} %}
+		<strong>{{each.title}}</strong>
+		{%- else %}
+		{%- if each.url contains "://" %}
+		<a href="{{each.url}}">{{each.title}}</a>
+		{%- else %}
+		<a href="{{each.url | relative_url}}">{{each.title}}</a>
+		{%- endif %}
+		{%- endif %}
+		{%- endfor %}
+	</nav>
+	{%- endif %}
+	<hr />
+</header>

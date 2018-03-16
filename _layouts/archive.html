@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+{%- if page.type == "year" -%}
+{%- capture type -%}from {{page.date | date: "%Y"}}{%- endcapture -%}
+{%- elsif page.type == "month" -%}
+{%- capture type -%}from {{page.date | date: "%B %Y"}}{%- endcapture -%}
+{%- elsif page.type == "day" -%}
+{%- capture type -%}from {{page.date | date: "%d %B, %Y"}}{%- endcapture -%}
+{%- elsif page.type == "tag" -%}
+{%- capture type -%}with tag "{{page.title | capitalize}}"{%- endcapture -%}
+{%- endif -%}
+
+<main>
+<h2>Archive of posts {{type}}</h2>
+
+<ul>
+	{%- for post in page.posts %}
+	<li>
+		{{post.date | date: "%d %b, %Y"}} <a href="{{post.url | relative_url}}">{{post.title}}</a>
+	</li>
+	{%- endfor %}
+</ul>
+<nav>
+	<a href="{{'/blog/archives/' | relative_url}}">Archive</a>
+	<a href="{{'/blog/tags/' | relative_url}}">Tags</a>
+</main>
+

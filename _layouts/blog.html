@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<main>
+	<ul>
+		{%- for post in site.posts %}
+		<li>
+			{{post.date | date: "%d %b, %Y"}}
+			<a href="{{post.url | relative_url}}">{{post.title}}</a>
+		</li>
+		{%- endfor %}
+	</ul>
+	<p>Subscribe <a href="{{'/feed.xml' | relative_url}}">via RSS</a></p>
+	<nav>
+		<a href="{{'/blog/archives/' | relative_url}}">Archive</a>
+		<a href="{{'/blog/tags/' | relative_url}}">Tags</a>
+	</nav>
+</main>

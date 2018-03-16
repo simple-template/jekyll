@@ -1,0 +1,47 @@
+---
+layout: page
+title: "Archives"
+permalink: /blog/archives/
+---
+
+{%-
+	assign postsByYear = site.posts |
+	group_by_exp:"post", "post.date |
+	date: '%Y'"
+%}
+<ul>
+	{%- for year in postsByYear %}
+	<li>
+		<a href="{{'/blog/' | relative_url}}{{year.name}}">{{year.name}}</a>
+		{%-
+			assign postsByMonth = year.items |
+			group_by_exp:"post", "post.date | date: '%B'"
+		%}
+		<ul>
+			{%- for month in postsByMonth %}
+			<li>
+				<a href="{{'/blog/' | relative_url}}{{year.name}}/{{month.name | date: "%m"}}/">
+				{{-month.name-}}
+				</a>
+				{%-
+					assign postsByDay = month.items |
+					group_by_exp:"post", "post.date | date: '%d'"
+				%}
+				<ul>
+					{%- for day in postsByDay %}
+					<li>
+						<a href="{{'/blog/' | relative_url}}{{year.name}}/{{month.name | date: "%m"}}/{{day.name}}/">
+						{{-day.name-}}
+						</a>
+					</li>
+					{%- endfor %}
+				</ul>
+			</li>
+			{%- endfor %}
+		</ul>
+	</li>
+	{%- endfor %}
+</ul>
+<nav>
+<a href="{{ '/blog/tags/' | relative_url}}">Tags</a>
+</nav>

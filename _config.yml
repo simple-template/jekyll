@@ -1,0 +1,42 @@
+# Copyright 2017-2018, Ankit R Gadiya
+# BSD 3-Clause License
+
+# Site
+lang: "en"
+title: "Jekyll"
+author: "Ankit R Gadiya"
+url: "https://simple-template.gitlab.io"
+base: "/jekyll"
+logo: "https://github.com/simple-template.png"
+permalink: "/blog/:year/:month/:day/:title/"
+
+# SEO
+# twitter:
+#   username: ankitrgadiya
+# social:
+#   name: "Ankit R Gadiya"
+#   links:
+#       - https://www.facebook.com/ankit.r.gadiya
+#       - https://twitter.com/ankitrgadiya
+#       - https://github.com/ankitrgadiya
+#       - https://www.youtube.com/channel/UCbct_i6BcaEZCqt63c-nyYA
+#       - https://www.instagram.com/ankitrgadiya
+#       - https://www.linkedin.com/in/ankitrgadiya
+# google_site_verification:
+
+# Build
+timezone: Asia/Kolkata
+markdown: kramdown
+jekyll-archives:
+    enabled: ['year', 'month', 'day', 'tags']
+    layouts: archive
+    permalinks:
+        year: '/blog/:year/'
+        month: '/blog/:year/:month/'
+        day: '/blog/:year/:month/:day/'
+        tag: '/blog/tags/:name/'
+plugins:
+    - jekyll-seo-tag
+    - jekyll-archives
+    - jekyll-feed
+    - jekyll-sitemap
