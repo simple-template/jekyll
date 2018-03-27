@@ -1,0 +1,9 @@
+language: ruby
+cache: bundler
+
+install:
+    - gem install bundler
+    - bundle install
+script:
+    - jekyll build
+    - gem build jekyll-simple-template.gemspec
