@@ -1,5 +1,5 @@
 <header>
-	<h1>{{site.title}}</h1>
+	<h1>{{site.title | default: "Title"}}</h1>
 	{%- if site.data.navigation %}
 	<nav>
 		{%- for each in site.data.navigation %}

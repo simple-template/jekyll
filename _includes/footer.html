@@ -23,6 +23,6 @@
 	</nav>
 	{%- endif %}
 	<p>
-		{{site.time | date :'%Y'}} &copy; {{site.author}}
+		{{site.time | date :'%Y'}} &copy; {{site.author | default: "Author"}}
 	</p>
 </footer>
