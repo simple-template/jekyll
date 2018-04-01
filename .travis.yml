@@ -1,9 +1,15 @@
 language: ruby
 cache: bundler
-
 install:
-    - gem install bundler
-    - bundle install
+- gem install bundler
+- bundle install
 script:
-    - jekyll build
-    - gem build jekyll-simple-template.gemspec
+- jekyll build
+- gem build jekyll-simple-template.gemspec
+deploy:
+  provider: rubygems
+  api_key:
+    secure: mIfgZ0i8BtRvntiG5PrGjv7RkKyBgMJAsDe2BOamu1nz5q1xCRx4fj0nEp7c4hDyrdAE8J8+VBHQTHhfNMuo5wMb5unDTpJs6fBINXYe6rsY94nQu21dFoR9LIDQB3pJpr/cxt0XOtxllP3iDQUtFg3g+0sWH7/SOhdNkUc1gsb71237TRhsm/tSJ0vlLhd9WOdCEmU8jZyWIKoZYG94912WJ/SzoZE7NpDwqPjLNQDD16B6ZGa9MPTgxOknRSUucs1UypqXVZxMH2EAh+9xErzGhFB+obR5pzZiarDuoDLTTvSAt/ukIlJYIHqY2s26/v/bq83i1HCwHn3rJmRd6sT8OQb1mwKUSNv/cZEFBk3Lc4JIlQRMeFbNe5hj4Z6rkFQs40KnX1g0v+Bb1t5l+l5OHQ8i0wgcup8Kl0AjRifoIHd2DIi82SRaya2b3++HaQRiUnMTNQr/C9J7CawLq/aPCIk5eAYaWMOJfaCYcNRPrqhfWR653IGSgcGwyZYN3Bx5xo1/lFv/k6E6Wh57Cd/yqe8uM8V5mgYDYjJFaKtMHJMofmIhNVMMFmf8WROykPKIx0qEnf8aNPoLHmracqeKiy+4rpxTghchRLVRqt8U1rQwXPH6w4J+UmpMmO8rofSMC0QbY1Uxr8GZaKsUB2KnrwQRkFcnoilS3iIUMn8=
+  gem: jekyll-simple-template
+  on:
+    tags: true
