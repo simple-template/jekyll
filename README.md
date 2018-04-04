@@ -52,7 +52,7 @@ theme: jekyll-simple-template
 
 ## Configuration
 
-The template excepts following variables in the `_config.yml`.
+The template expects following variables in the `_config.yml`.
 
 * `lang`: Langauge of the Website (for html tag)
 * `title`: Title of the Website (for SEO and Header)
