@@ -10,6 +10,8 @@ baseurl: "/jekyll"
 logo: "https://github.com/simple-template.png"
 permalink: "/blog/:year/:month/:day/:title/"
 
+# micro_blog: ankit
+
 # SEO
 # twitter:
 #   username: ankitrgadiya
