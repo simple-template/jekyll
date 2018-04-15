@@ -94,6 +94,18 @@ linkedin : username
 
 [Example](https://github.com/simple-template/jekyll/blob/master/_data/social.yml)
 
+### Micro.Blog
+
+If you want to link the blog/site with [Micro.blog](https://micro.blog), add
+following in `_config.yml`.
+
+```
+micro_blog: username
+```
+
+This will generate a link tag in head (to verify site) and add a link to follow
+on Blog page.
+
 ### SEO
 
 As mentioned above, the template uses
