@@ -5,7 +5,7 @@
 lang: "en"
 title: "Jekyll"
 author: "Ankit R Gadiya"
-url: "https://simple-template.gitlab.io"
+url: "https://st.argp.in"
 baseurl: "/jekyll"
 logo: "https://github.com/simple-template.png"
 permalink: "/blog/:year/:month/:day/:title/"
