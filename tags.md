@@ -9,7 +9,7 @@ permalink: /blog/tags/
 	{%- assign tag_name = tag | first | capitalize | replace: "-", " "%}
 	{%- assign tag_posts = tag | last %}
 	<li>
-		<a href="{{'/blog/tags/' | relative_url}}{{tag | first}}/">{{tag_name}}</a>
+		<a href="{{'/blog/tags/' | relative_url}}{{tag | first | downcase}}/">{{tag_name}}</a>
 		<small>{{tag_posts | size}} Posts</small>
 	</li>
 	{%- endfor %}
