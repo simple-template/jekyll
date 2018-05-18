@@ -2,8 +2,6 @@
 
 [![Gem
 Version](https://badge.fury.io/rb/jekyll-simple-template.svg)](https://badge.fury.io/rb/jekyll-simple-template)
-[![Pipeline
-Status](https://gitlab.com/simple-template/jekyll/badges/master/build.svg)](https://gitlab.com/simple-template/jekyll/pipelines)
 [![Build
 Status](https://travis-ci.org/simple-template/jekyll.svg?branch=master)](https://travis-ci.org/simple-template/jekyll)
 
