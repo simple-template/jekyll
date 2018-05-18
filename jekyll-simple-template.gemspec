@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-simple-template"
-  spec.version       = "0.0.9"
+  spec.version       = "0.0.9.1"
   spec.authors       = ["Ankit R Gadiya"]
   spec.email         = ["ankit4922@gmail.com"]
 
   spec.summary       = "A very simple and minimal but fully functional template"
-  spec.homepage      = "https://simple-template.gitlab.io/jekyll/"
+  spec.homepage      = "https://st.argp.in/jekyll/"
   spec.license       = "BSD-3-Clause"
 
   spec.metadata["plugin_type"] = "theme"

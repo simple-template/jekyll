@@ -5,7 +5,7 @@ Version](https://badge.fury.io/rb/jekyll-simple-template.svg)](https://badge.fur
 [![Build
 Status](https://travis-ci.org/simple-template/jekyll.svg?branch=master)](https://travis-ci.org/simple-template/jekyll)
 
-Demo:  https://simple-template.gitlab.io/jekyll/
+Demo:  https://st.argp.in/jekyll/
 
 This is [Jekyll](https://jekyllrb.com/) Version of [Simple
 Template](https://simple-template.gitlab.io/). The template is designed to look
