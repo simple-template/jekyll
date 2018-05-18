@@ -137,6 +137,13 @@ The template provides following layouts:
 To override any of the built-in layouts, just create the file with same name in
 `_layouts/` directory.
 
+## Tests
+
+![test-mobile-google](https://user-images.githubusercontent.com/18071765/40238615-55783f0a-5ad1-11e8-9c8d-c1e99111da50.png)
+![google-page-insight](https://user-images.githubusercontent.com/18071765/40238657-785851ea-5ad1-11e8-9a63-ef8d02e70d93.png)
+![pingdom](https://user-images.githubusercontent.com/18071765/40238692-8ff7f3a0-5ad1-11e8-9ff3-3bece94bcc3c.png)
+![gmetrix](https://user-images.githubusercontent.com/18071765/40238706-9c2535c0-5ad1-11e8-9db8-293d18205750.png)
+
 ## License
 
 The template is Open Sourced and is Licensed under [BSD
