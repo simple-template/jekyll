@@ -4,6 +4,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="{{'favicon.ico' | relative_url}}">
 	<link type="application/atom+xml" rel="alternate" href="{{'feed.xml' | relative_url}}" title="{{site.title}}" />
+	{% if site.pocket_verification -%}
+	<meta name="pocket-site-verification" content="{{site.pocket_verification}}" />
+	{% endif -%}
 	{% if site.micro_blog -%}
 	<link href="https://micro.blog/{{site.micro_blog}}" rel="me" />
 	{% endif -%}
