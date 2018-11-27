@@ -13,6 +13,9 @@
 			{%- else %}
 			<a href="{{each.url | relative_url}}">{{each.title}}</a>
 			{%- endif %}
+			{% if forloop.last == false -%}
+			|
+			{%- endif -%}
 			{%- endfor %}
 		</div>
 		{%- endif %}
