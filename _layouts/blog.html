@@ -3,7 +3,6 @@ layout: default
 ---
 
 <main>
-	<h2>Blog Posts</h2>
 	<ul>
 		{%- for post in site.posts %}
 		<li>
@@ -17,8 +16,4 @@ layout: default
 		or follow on <a href="https://micro.blog/{{site.micro_blog}}">Micro.Blog</a>
 		{%- endif %}
 	</p>
-	<nav>
-		<a href="{{'/blog/archives/' | relative_url}}">Archive</a>
-		<a href="{{'/blog/tags/' | relative_url}}">Tags</a>
-	</nav>
 </main>

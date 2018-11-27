@@ -12,4 +12,10 @@
 	{% endif -%}
 	{% seo -%}
 	{% include style.html -%}
+	{% if site.mathjax %}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+	{% endif %}
+	{% if site.syntax_highlight -%}
+	<link href="{{'/assets/highlight.css' | relative_url}}" rel="stylesheet">
+	{% endif -%}
 </head>

@@ -25,4 +25,9 @@
 	<p>
 		{{site.time | date :'%Y'}} &copy; {{site.author | default: "Author"}}
 	</p>
+	{% if site.copyright %}
+	<p>
+		{{site.copyright}}
+	</p>
+	{% endif %}
 </footer>

@@ -1,19 +1,28 @@
 <header>
-	<h1>{{site.title | default: "Title"}}</h1>
-	{%- if site.data.navigation %}
 	<nav>
-		{%- for each in site.data.navigation %}
-		{%- if page.url == {{each.url}} %}
-		<strong>{{each.title}}</strong>
-		{%- else %}
-		{%- if each.url contains "://" %}
-		<a href="{{each.url}}">{{each.title}}</a>
-		{%- else %}
-		<a href="{{each.url | relative_url}}">{{each.title}}</a>
+		<div class="left" style="text-align:left;float:left">
+			<a href="{{'/' | relative_url }}">
+				{{-site.title | default: "Title"-}}
+			</a>
+		</div>
+		{%- if site.data.navigation %}
+		<div class="right" style="text-align:right;">
+			{%- for each in site.data.navigation %}
+			{%- if each.url contains "://" %}
+			<a href="{{each.url}}">{{each.title}}</a>
+			{%- else %}
+			<a href="{{each.url | relative_url}}">{{each.title}}</a>
+			{%- endif %}
+			{%- endfor %}
+		</div>
 		{%- endif %}
-		{%- endif %}
-		{%- endfor %}
 	</nav>
+	<h1>{{page.title | default: "Title"}}</h1>
+	{%- if page.description %}
+	<p>{{ page.description }}</p>
+	{%- endif %}
+	{%- if page.date %}
+	<p>{{page.date | date: '%B %d, %Y'}}</p>
 	{%- endif %}
 	<hr />
 </header>

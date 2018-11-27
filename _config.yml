@@ -11,6 +11,7 @@ logo: "https://github.com/simple-template.png"
 permalink: "/blog/:year/:month/:day/:title/"
 
 # micro_blog: ankit
+copyright: "BSD 3-Clause License"
 
 # SEO
 # twitter:
@@ -30,16 +31,9 @@ permalink: "/blog/:year/:month/:day/:title/"
 # Build
 timezone: Asia/Kolkata
 markdown: kramdown
-jekyll-archives:
-    enabled: ['year', 'month', 'day', 'tags']
-    layouts: archive
-    permalinks:
-        year: '/blog/:year/'
-        month: '/blog/:year/:month/'
-        day: '/blog/:year/:month/:day/'
-        tag: '/blog/tags/:name/'
+mathjax: true
+syntax_highlight: true
 plugins:
     - jekyll-seo-tag
-    - jekyll-archives
     - jekyll-feed
     - jekyll-sitemap

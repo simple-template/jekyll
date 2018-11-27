@@ -3,15 +3,7 @@ layout: default
 ---
 
 <main>
-	<h2>{{page.title}}</h2>
-	<p>{{page.date | date: '%B %d, %Y'}}</p>
-	{{content-}}
-	{%- if page.tags %}
-	<p>
-	<b>Tags:</b>
-	{%- for each in page.tags %}
-	<a href="{{'/blog/tags/' | relative_url}}{{each | downcase}}/">#{{each}}</a>
-	{%- endfor %}
-	</p>
-	{%- endif %}
+<article>
+{{content-}}
+</article>
 </main>
