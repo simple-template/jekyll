@@ -6,7 +6,7 @@ layout: default
 <article>
 {{content}}
 
-{%- if site.posts.size > 0 %}
+{%- if site.posts.size > 0  and page.posts %}
 <h2>Latest Posts:</h2>
 <ul>
 	{%- for each in site.posts limit:5 %}

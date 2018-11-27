@@ -1,6 +1,7 @@
 ---
 layout: home
 title: "Home"
+posts: true
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lacus nunc.
